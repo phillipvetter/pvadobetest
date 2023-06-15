@@ -70,6 +70,7 @@
         const callbacks = {
             onCancel: () => {},
             onPublish: (publishParams) => {
+		console.log(publishParams.exportButtonId);
                 if(publishParams.exportButtonId=="save-to-host-app"){
                     appImage.src = publishParams.asset.data;
                     appImage.style.visibility="visible";
