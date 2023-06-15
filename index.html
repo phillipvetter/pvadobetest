@@ -71,10 +71,10 @@
             onCancel: () => {},
             onPublish: (publishParams) => {
 		console.log(publishParams);
-                if(publishParams.exportButtonId=="save-to-host-app"){
+                //if(publishParams.exportButtonId=="save-to-host-app"){
                     appImage.src = publishParams.asset.data;
                     appImage.style.visibility="visible";
-                }
+                //}
             },
             onError: (err) => {
                 console.error('Error received is', err.toString())
